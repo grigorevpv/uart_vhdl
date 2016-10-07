@@ -1,0 +1,7 @@
+V3 4
+FL G:/Xilinx_ISE_DS_Win_14.7_1015_1/projects/uart/urt.vhd 2016/10/07.16:19:23 P.20131013
+EN work/urt 1475846371 FL G:/Xilinx_ISE_DS_Win_14.7_1015_1/projects/uart/urt.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/urt/Behavioral 1475846372 \
+      FL G:/Xilinx_ISE_DS_Win_14.7_1015_1/projects/uart/urt.vhd EN work/urt 1475846371
