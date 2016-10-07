@@ -58,24 +58,24 @@ signal TxEnable: std_logic := '0';
 
 begin
 
-set_flag: process (btn)
-begin
-		if btn'event and btn = '1' then
-			btnFlag <= '1';
-		end if;
-		if btn'event and btn = '0' then
-			btnFlag <= '0';
-		end if;
-end process;
+--set_flag: process (btn)
+--begin
+--		if btn'event and btn = '1' then
+--			btnFlag <= '1';
+--		end if;
+--		if btn'event and btn = '0' then
+--			btnFlag <= '0';
+--		end if;
+--end process;
 
-clk_l : process (clk)
-begin
+clk_l : process (clk, btn)
+begin		
    if clk'event and clk = '1' then
-		if (btnFlag = '1') then
+		if btn = '1' then
 			delay <= delay+'1';
 		end if;
 		
-		if btnFlag = '0' then
+		if btn = '0' then
 			if delay > 0 then
 				delay <= "00000000000000000000000";
 			end if;
